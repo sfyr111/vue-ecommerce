@@ -1,4 +1,4 @@
-# my-project
+# vue-ecommerce
 
 > A Vue.js project
 
