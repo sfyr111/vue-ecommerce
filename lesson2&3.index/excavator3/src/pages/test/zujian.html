@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>zujian</title>
+</head>
+<body>
+    <div id="app">
+        <el-card class="box-card">
+        <div v-for="o in items" class="text item">
+            {{'列表内容 ' + o.desc }}
+        </div>
+        </el-card>
+        <el-pagination
+        layout="prev, pager, next"
+        :total="50"
+        :current-page="currPage"
+        @current-change="change">
+        </el-pagination>
+    </div>
+</body>
+</html>
